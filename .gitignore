@@ -11,6 +11,8 @@
 *.cb
 *.cb2
 .*.lb
+# Auxiliary pdf duplicates of my figures
+**/fig/**.pdf
 
 ## Intermediate documents:
 *.dvi
