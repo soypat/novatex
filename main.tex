@@ -190,7 +190,7 @@ Todo documento común y corriente de \LaTeX{} empieza eligiendo la clase de docu
     \item \verb|letter| Para escribir cartas
     \item \verb|IEEEtrans| Para artículos con formato de la revista \emph{Transactions} de la IEEE
 \end{itemize}
-donde cada uno tiene sus opciones y sus manias. En esté documento se va tratar solamente el tipo \verb|article|.
+donde cada uno tiene sus opciones y sus manías. En esté documento se va tratar solamente el tipo \verb|article|.
 
 \textbf{Opciones para } \verb|article|:
 \begin{itemize}
@@ -327,7 +327,7 @@ Con agregar el siguiente código a un documento se puede obtener un encabezado s
 
 {\tt \bf Hfill}. Junto con su hermano \verb|\vspace*{\fill}|, son opciones muy útiles para llenar espacio y formatear cualquier número de objetos que uno se pueda imaginar.
 
-A continuación: usando el paquete \vbfont{fancyhdr} se pueden obtener unos resultado fantasticos\footnote{Si se va usar en conjunto con \vbfont{geometry} declarar este ultimo primero!}
+A continuación: usando el paquete \vbfont{fancyhdr} se pueden obtener unos resultado fantásticos\footnote{Si se va usar en conjunto con \vbfont{geometry} declarar este ultimo primero!}
 \begin{code}\label{cod:documentheader}
 \begin{verbatim}
 
@@ -477,7 +477,7 @@ Como se puede ver en la figura \ref{fig:MiImagen}.
 
 \textbf{Error.} Acordarse de agregar el paquete \verb|graphicx| y verificar que la imagen está en el directorio del archivo \verb|.tex| y que está bien escrito el nombre, minúsculas y mayúsculas donde van.
 
-\textbf{Label y ref.} \LaTeX{} solito mantiene registro de las imágenes que se van usando y las numera. En cualquier momento puedo referir una imagen que haya usado en el texto, \verb|\ref{fig:MiImagen}|=\ref{fig:MiImagen}.
+\textbf{Label y ref.} \LaTeX{} por si solo mantiene registro de las imágenes que se van usando y las numera. En cualquier momento puedo referir una imagen que haya usado en el texto, \verb|\ref{fig:MiImagen}|=\ref{fig:MiImagen}.
 
 \textbf{Ancho/alto.} Se controla mediante los parámetros \verb|width| y \verb|height|. En este caso se uso el comando \verb|\textwidth| para que la figura tome el ancho del mismo texto. En lugar de \verb|\textwidth| se puede usar \verb|width=8cm| para obtener una imagen de ancho 8 centímetros.\footnote{Si se trabaja con columnas múltiples se recomienda al lector no confiar en estas unidades. Es mas, hasta que no se especifique el correcto tamaño de la pagina con el paquete \vbfont{geometry} las unidades especificadas no tendrán el aspecto correcto.} \LaTeX{} trabaja en las siguientes unidades:
 
@@ -490,7 +490,7 @@ Como se puede ver en la figura \ref{fig:MiImagen}.
 \end{itemize}
 
 \textbf{Float}\vbfontbf{[htb!].} 
-\LaTeX{} es un programa orgulloso, cree que sabe exactamente donde poner cada imagen, o tabla, sin falta. Para los casos donde la pifie (casi siempre) se usa un \emph{float specifier}, una sugerencia por parte del usuario de donde poner la imagen. \verb|[h]| le sugiere al \LaTeX{} que la imagen vaya en el mismo lugar donde se encuentra en el código, \emph{here} (aquí). Se le pueden agregar segundos parámetros, en orden de prioridad. \verb|[tbh]| sugiere que vaya arriba de todo (\emph{top}), si no puede entonces abajo de todo (\emph{bottom}) y en el peor de los casos, poneme la imagen donde está en el código (\emph{here}). Agregar un signo de exclamación convierte la sugerencia en una amenaza, de está forma se motiva más el \LaTeX{} en cumplir con el Float.
+\LaTeX{} es un programa orgulloso, cree que sabe exactamente donde poner cada imagen, o tabla, sin falta. Para los casos donde la pifie (casi siempre) se usa un \emph{float specifier}, una sugerencia por parte del usuario de donde poner la imagen. \verb|[h]| le sugiere al \LaTeX{} que la imagen vaya en el mismo lugar donde se encuentra en el código, \emph{here} (aquí). Se le pueden agregar segundos parámetros, en orden de prioridad. \verb|[tbh]| sugiere que vaya arriba de todo (\emph{top}), si no puede entonces abajo de todo (\emph{bottom}) y en el peor de los casos, pon la imagen donde está en el código (\emph{here}). Agregar un signo de exclamación convierte la sugerencia en una amenaza, de está forma se motiva más el \LaTeX{} en cumplir con el Float.
 \subsection{Múltiples gráficos}
 Al usuario le podrá interesar imprimir múltiples gráficos para ahorrar espacio para informes con longitud máxima o para vincular imágenes relacionadas con una etiqueta única.
 
@@ -616,7 +616,7 @@ Para escribir matemática uno tiene que estar dentro de un \textbi{entorno} espe
 \textbf{Entorno }\verb|equation|. Sirve para numerar la ecuación que uno escribe. Cuando le agrega el asterisco en frente \verb|\begin{equation*}| no se le otorga un número.
 
 
-Lista de entornos matematicos:
+Lista de entornos matemáticos:
 \begin{itemize}
     \item \verb|\[  \]| (\verb|amsmath|)
     \item \verb|gather| y \verb|gather*| (ecuaciones en multiples lineas con \verb|amsmath|)
@@ -963,14 +963,14 @@ Referir ecuaciones es tan facil como \ref{eq:miGranEcuacion}.
 \end{code}
 Resultado del código \ref{cod:hyperref1}
 \begin{mdframed}
-Link a un overleaf \href{https://www.youtube.com/watch?v=WAsezaBmuJ8}{aquí}. Referir ecuaciones es tan facil como \ref{eq:miGranEcuacion}.
+Link a un overleaf \href{https://www.youtube.com/watch?v=WAsezaBmuJ8}{aquí}. Referir ecuaciones es tan fácil como \ref{eq:miGranEcuacion}.
 \end{mdframed}
 \textbf{Color.} \href{https://tex.stackexchange.com/questions/50747/options-for-appearance-of-links-in-hyperref}{Se puede cambiar el color de los links si se desea.} 
 
 \subsection{Cajas encuadradas y \vbfont{mdframed}}
 Si al usuario le ha gustado las cajas encuadradas de este documento tiene suerte. Aquí está detallado como lograrlo.
 
-Primero de todo el código del preambulo de \textbf{este} documento:
+Primero de todo el código del preámbulo de \textbf{este} documento:
 
 \begin{code}
 \begin{verbatim}
@@ -992,7 +992,7 @@ ntheorem]{code}{Código}[section]
 
 \textbf{Fondo.} Se le puede otorgar un color cualquiera. En este caso se opta por usar uno de los colores precargados del \LaTeX{}, el \vbfont{blue} (azul). El signo de exclamación es un operador del paquete \vbfont{xcolor} que permite modificar la opacidad (o transparencia) del color. En este caso se elige 40\% opacidad. Si no se especifica queda \vbfont{blue} solido.
 
-Ahora se viene el código para insertar el duo dinamico, siempre dejando una linea en blanco cuando comienza el entorno \vbfont{verbatim}
+Ahora se viene el código para insertar el dúo dinámico, siempre dejando una linea en blanco cuando comienza el entorno \vbfont{verbatim}
 \begin{code}\label{cod:RecursividadTotal}
 
 \begin{verbatim}
@@ -1134,7 +1134,7 @@ referencias. Tambíen puedo citar con \citep{masas}.
 
 Resultado del código \ref{cod:natbib}:\footnote{Se tuvo problemas al compilar esta parte porque se usaron dos entornos para bibliografía, cosa poco recomendable. Perdone las discrepancias.\citep{masas}}
 \begin{mdframed}
-Si no cito el libro KAWAI et al. [2006], no va aparecer en mi lista de referencias. Tambíen puedo citar con [KAWAI et al., 2006].
+Si no cito el libro KAWAI et al. [2006], no va aparecer en mi lista de referencias. También puedo citar con [KAWAI et al., 2006].
 %\clearpage
 \bibliography{misreferencias.bib} % Indica archivo
 \bibliographystyle{plainnat}  %estilo de bibliografia  
@@ -1212,7 +1212,7 @@ Después de encontrar un paquete que te guste, anotas el nombre del paquete (en 
 Algunos paquetes requieren un poco mas de finura al agregar. Para usar la fuente preciosa que es Helvética se tuvo que agregar la linea \verb|\renewcommand{\familydefault}{\sfdefault}| después de agregado el paquete de la fuente \verb|helvet| como está ejemplado en el código \ref{cod:TituloTecnico}.
 
 \subsection{Como cambiar fuente dentro de documento}
-Si quiero escribir un parrafo o palabra con una fuente diferente necesito conocer el \emph{font code} de la fuente deseada y agregar su paquete respectivo al preámbulo. Luego:
+Si quiero escribir un párrafo o palabra con una fuente diferente necesito conocer el \emph{font code} de la fuente deseada y agregar su paquete respectivo al preámbulo. Luego:
 
 \begin{code} \label{cod:fontfamilyselect1}
 \begin{verbatim}
