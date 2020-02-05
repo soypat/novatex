@@ -1,12 +1,14 @@
 % Esto es un magic comment para indicar el compilador. En este caso es XeLaTeX.
 %%& --job-name=mypdf
 %%& --quiet
-% !TeX program = xelatex
+% !TeX program = lualatex
 % !TeX spellcheck = es_ES
 % !TeX encoding = utf8
 
 \documentclass{article}
-\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\setlistdepth{5}
+%\usepackage[utf8]{inputenc}
 %%%%%%%%%%%%%%%%%%%%%
 %%%%%% FONTS
 %%%%%%%%%%%%%%%%%%%%%
@@ -34,10 +36,12 @@
     \usepackage[utopia]{mathdesign}
 
 \usepackage[a4paper,left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
-\usepackage{graphicx,xcolor,pdfpages,caption,subcaption,soul,fontawesome,natbib,wrapfig}
+\usepackage{graphicx,xcolor,pdfpages,caption,subcaption,soul,fontawesome,wrapfig}
+%BIBLIO
+\usepackage{natbib}
 
+% FANCY
 \usepackage{fancyhdr}
-
 \fancypagestyle{regular}{
 \fancyhf{}
 \setlength{\headheight}{15.2pt}
@@ -1136,9 +1140,11 @@ Resultado del código \ref{cod:natbib}:\footnote{Se tuvo problemas al compilar e
 \begin{mdframed}
 Si no cito el libro KAWAI et al. [2006], no va aparecer en mi lista de referencias. También puedo citar con [KAWAI et al., 2006].
 %\clearpage
-\bibliography{misreferencias.bib} % Indica archivo
 \bibliographystyle{plainnat}  %estilo de bibliografia  
+\bibliography{misreferencias.bib} % Indica archivo
+
 \end{mdframed}
+
 %%%%%%%%%%%%%%%%%%%%%%%
 %% FONT
 %%%%%%%%%%%%%%%%%%%%%%%
